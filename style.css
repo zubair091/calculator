@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color:cadetblue ;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.inputText {
+  font-size: 2em;
+  padding: 10px;
+  text-align: right;
+  border: none;
+  width: 95%;
+  outline: none;
+  background-color: cadetblue;
+  color: #fff;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 10px;
+}
+
+.main button {
+  font-size: 1.5em;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main button.double {
+   grid-column: span 2;
+   background-color: red;
+   color: #fff;
+}
+.main button.double2{
+  grid-row: span 2;
+}
+
+.main button.triple {
+  grid-column: span 2;
+  background-color: rgb(159, 159, 0);
+  color: #fff;
+}
+
+.main button:active {
+  background-color: #e0e0e0;
+}
